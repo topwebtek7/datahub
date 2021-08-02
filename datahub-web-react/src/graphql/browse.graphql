@@ -26,6 +26,9 @@ query getBrowseResults($input: BrowseInput!) {
                 globalTags {
                     ...globalTagsFields
                 }
+                editableProperties {
+                    description
+                }
             }
             ... on Dashboard {
                 urn
@@ -46,6 +49,9 @@ query getBrowseResults($input: BrowseInput!) {
                 }
                 globalTags {
                     ...globalTagsFields
+                }
+                editableProperties {
+                    description
                 }
             }
             ... on GlossaryTerm {
@@ -85,6 +91,9 @@ query getBrowseResults($input: BrowseInput!) {
                 globalTags {
                     ...globalTagsFields
                 }
+                editableProperties {
+                    description
+                }
             }
             ... on DataFlow {
                 urn
@@ -102,6 +111,9 @@ query getBrowseResults($input: BrowseInput!) {
                 }
                 globalTags {
                     ...globalTagsFields
+                }
+                editableProperties {
+                    description
                 }
             }
             ... on MLFeatureTable {
